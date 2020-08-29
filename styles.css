@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: #A9A9A9;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.main{
+	padding-top: 20px;
+	/*margin: 0 auto;*/
+}
+
+.dashboard {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+	background-image: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+	width: 450px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.stars {
+	display: flex;
+}
+
+ul li {
+	list-style: none;
+}
+
+.memory-game {
+	background-image: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+	width: 450px;
+	height: 450px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+
+.memory-card {
+	width: calc(25% - 10px);
+	height: calc(25% - 10px);
+	margin: 5px;
+	/*padding: 15px;*/
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+}
+
+.memory-card:active {
+	transform: scale(.95);
+	transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: absolute;
+	border-radius: 5px;
+	background: #1c7ccc;
+	backface-visibility: hidden;
+} 
+
+.memory-card, .redo {
+	cursor: pointer;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+section.game-won {
+	display: none;
+}
+
+.game-won,
+.time-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h1 {
+  margin: 10px auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3.0em;
+}
+
+
+.game-won h2 {
+    margin: 0;
+    display: block;
+    font-size: 3.0em;
+    font-family: 'Coda', cursive;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.game-won p {
+	display: block;
+	font-size: 1.8em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.game-won .replay {
+    width: 150px;
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 300;
+    cursor: url(../img/tap.png), auto;
+    text-transform: uppercase;
+    border: solid #bdbdbd 1px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    -webkit-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.replay:hover {
+    background: #e5593f;
+}

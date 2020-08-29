@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="main">
+    <header>
+      <h1>Matching Game </h1>
+    </header>
+    <section class="dashboard">
+      <div class="item">
+        <ul class="stars">
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+          <li><i class="fas fa-star"></i></li>
+        </ul>
+      </div>
+      <div class="item">
+           Moves: <span class="moves"></span>
+      </div>
+      <div class="item">
+        <div class="redo">
+          <i class="fas fa-redo"></i>
+        </div>
+      </div>
+      <div class="item">
+        <span id="minute"></span>m : <span id="second"></span>s
+      </div>
+    </section>
+    <section class="memory-game">
+      <div class="memory-card" data-name="one">
+        <img class="front-face" src="img/img-1.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="one">
+        <img class="front-face" src="img/img-1.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="two">
+        <img class="front-face" src="img/img-2.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="two">
+        <img class="front-face" src="img/img-2.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="three">
+        <img class="front-face" src="img/img-3.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="three">
+        <img class="front-face" src="img/img-3.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="four">
+        <img class="front-face" src="img/img-4.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="four">
+        <img class="front-face" src="img/img-4.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="five">
+        <img class="front-face" src="img/img-5.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="five">
+        <img class="front-face" src="img/img-5.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="six">
+        <img class="front-face" src="img/img-6.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="six">
+        <img class="front-face" src="img/img-6.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="seven">
+        <img class="front-face" src="img/img-7.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="seven">
+        <img class="front-face" src="img/img-7.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="eight">
+        <img class="front-face" src="img/img-8.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+      <div class="memory-card" data-name="eight">
+        <img class="front-face" src="img/img-8.jpg">
+        <img class="back-face" src="img/question.jpg">
+      </div>
+    </section>  
+  </section>
+  <section class="game-won">
+    <h2>Congratulation! You Won the game</h2>
+    <p>with <span class="move"></span> moves in <span class="gameWontimeDislay"></span><br> welldone </p>
+    <button class="replay">replay</button>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
